@@ -15,4 +15,4 @@ WHERE author="Ann Brown" AND h.title = t.title;
 --(iv)total no of books held at each branch
 SELECT SUM(copies),branch 
 FROM holdings
-GROUP BY 2;
+GROUP BY branch;
