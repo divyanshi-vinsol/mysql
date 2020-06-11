@@ -10,13 +10,13 @@ LIMIT 1;
 9000	Chris Gayle
 
 --ii. Find employee with 4th Highest salary from employee table.
-SELECT name 
+SELECT name, salary 
 FROM Employees 
 ORDER BY salary DESC 
 LIMIT 3, 1;
 --output
-# name
-Rahul Dravid
+# name	salary
+Rahul Dravid	700000
 
 --iii. Find department that is giving highest commission.
 SELECT SUM(commission_amount) AS commission,dept.name
